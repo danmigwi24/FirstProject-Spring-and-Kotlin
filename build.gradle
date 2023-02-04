@@ -16,20 +16,33 @@ repositories {
 }
 
 dependencies {
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'io.mockk:mockk:1.13.4'
+
+    //
     implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'org.jetbrains.kotlin:kotlin-reflect'
     implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
     implementation 'org.testng:testng:7.1.0'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
-    implementation("org.springframework.boot:spring-boot-starter-data-redis")
-    implementation("redis.clients:jedis:3.3.0")
+    implementation "org.springframework.boot:spring-boot-starter-data-redis"
+    implementation "redis.clients:jedis"
 
-    implementation 'com.h2database:h2:1.0.60'
-    implementation 'com.fasterxml.jackson.module:jackson-module-kotlin:2.14.2'
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa:3.0.2'
-    implementation 'org.springframework.boot:spring-boot-starter-websocket:3.0.2'
-    implementation 'org.springframework.boot:spring-boot-devtools:3.0.2'
+    implementation 'com.h2database:h2'
+    implementation 'com.fasterxml.jackson.module:jackson-module-kotlin'
+    //
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    //
+    implementation 'org.springframework.boot:spring-boot-starter-websocket'
+    implementation 'org.springframework.boot:spring-boot-devtools'
+
+    //
+    /*  implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.0")
+      implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor:1.4.0")
+      implementation("org.jetbrains.kotlinx:kotlinx-coroutines-spring:1.4.0")*/
+
+    implementation "mysql:mysql-connector-java"
 
 }
 

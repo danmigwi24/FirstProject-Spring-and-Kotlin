@@ -5,6 +5,10 @@ spring:
     port: 6379
     password:
     database: 0
+#  datasource:
+#    url: jdbc:mysql://<host>:<port>/<db_name>
+#    username: <username>
+#    password: <password>
 
 # Server Configuration
 server:

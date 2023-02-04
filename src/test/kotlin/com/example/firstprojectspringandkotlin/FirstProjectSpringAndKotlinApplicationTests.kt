@@ -1,4 +1,4 @@
-package com.example.FirstProjectSpringAndKotlin
+package com.example.firstprojectspringandkotlin
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
